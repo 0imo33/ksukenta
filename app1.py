@@ -12,7 +12,8 @@ st.write(address)
 hobby = st.multiselect("趣味を選んでね",["映画","マンガ","散歩"])
 st.write(hobby) 
 
-st.slider("この映画を１０点満点で評価すると",0,10,0)
+score = st.slider("この映画を１０点満点で評価すると",0,10,0)
+st.write(score)
 
 camera = st.camera_input("写真を撮影します！")
 if camera:
