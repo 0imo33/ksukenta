@@ -15,6 +15,8 @@ st.write(hobby)
 score = st.slider("この映画を１０点満点で評価すると",0,10,0)
 st.write(score)
 
+st.radio("性別を選んでね",["おとこ","おんな","どっちも"])
+
 camera = st.camera_input("写真を撮影します！")
 if camera:
   st.image(camera, caption="写真", use_column_width=true)
